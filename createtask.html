@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <h2>Create Post</h2>
+            <form id="create-post-form">
+                <!-- Title Field -->
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter the title" required>
+                </div>
+
+                <!-- Brief Description -->
+                <div class="form-group">
+                    <label for="brief-description">Brief Description (Max: 100 words):</label>
+                    <textarea id="brief-description" name="brief-description" rows="3" placeholder="Enter a brief description" maxlength="600" required></textarea>
+                </div>
+
+                <!-- Detailed Description -->
+                <div class="form-group">
+                    <label for="detailed-description">Detailed Description (Max: 5000 words):</label>
+                    <textarea id="detailed-description" name="detailed-description" rows="8" placeholder="Enter a detailed description" maxlength="30000" required></textarea>
+                </div>
+
+                <!-- Image Upload -->
+                <div class="form-group">
+                    <label for="image">Upload an Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+
+                <!-- Barter Type Dropdown -->
+                <div class="form-group">
+                    <label for="barter-type">Barter Type:</label>
+                    <select id="barter-type" name="barter-type" required>
+                        <option value="">Select Barter Type</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+
+                <!-- Offering Textbox -->
+                <div class="form-group">
+                    <label for="offering">What Are You Offering?</label>
+                    <input type="text" id="offering" name="offering" placeholder="Describe your offering" required>
+                </div>
+
+                <!-- Requirement Textbox -->
+                <div class="form-group">
+                    <label for="requirement">What Do You Require?</label>
+                    <input type="text" id="requirement" name="requirement" placeholder="Describe your requirement" required>
+                </div>
+
+                <!-- Post Button -->
+                <button type="submit" class="post-btn">Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
